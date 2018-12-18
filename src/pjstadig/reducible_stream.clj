@@ -94,7 +94,8 @@
                 (close stream))))))
        clojure.lang.Seqable
        (seq [this]
-         (seq (into [] this)))))))
+         (seq (into [] this)))
+       clojure.lang.Sequential))))
 
 (defn lines-open
   "Used as the open function for decoding text.  Returns a
